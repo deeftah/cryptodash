@@ -6,7 +6,7 @@
     <div class="col-lg-6 form-inline">
         <label for="filter">Select portfolio:</label>
         <select class="form-control" id="timespan" ng-model="vm.data.currentPortfolio">
-            <option ng-repeat="portfolio in vm.data.portfolios" value="{{portfolio.portfolioId}}">{{portfolio.name}}</option>
+            <option ng-repeat="portfolio in vm.data.portfolios" value="{{portfolio.portfolio_id}}">{{portfolio.name}}</option>
         </select>
         <button class="btn btn-primary" ng-click="vm.showDialog('addPortfolio')">Add new portfolio</button>
     </div>

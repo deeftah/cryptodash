@@ -178,7 +178,7 @@
                     console.log("Got", data);
                     vm.data.portfolios = data;
                     if (data.length > 0) {
-                        vm.data.currentPortfolio = stateService.loadState("currentPortfolio") || data[0].portfolioId + "";
+                        vm.data.currentPortfolio = stateService.loadState("currentPortfolio") || data[0].portfolio_id + "";
                         
                         console.log("Current portfolio is", vm.data.currentPortfolio);
                     }
